@@ -34,24 +34,25 @@ II. Langkah Pengerjaan
    - Setiap dokumen direpresentasikan sebagai sekumpulan token beserta frekuensi kemunculannya.
    - **TF (Term Frequency):**
      Rumus:
-     ![\small \text{TF}(t,d)=\frac{\text{jumlah kemunculan }t\text{ dalam }d}{\text{total jumlah kata dalam }d}](https://latex.codecogs.com/svg.latex?\small%20\text{TF}(t,d)=\frac{\text{jumlah%20kemunculan%20}t\text{%20dalam%20}d}{\text{total%20jumlah%20kata%20dalam%20}d})
+     ![Rumus TF}](gambarRumus/tf.png)
 
-     Di mana *t* adalah token dan *d* adalah dokumen.
+     Yang di mana *t* adalah token dan *d* adalah dokumen.
      
    - **IDF (Inverse Document Frequency):**  
      Rumus:
-     ![\small \text{IDF}(t)=\log\left(\frac{N}{\text{DF}(t)}\right)](https://latex.codecogs.com/svg.latex?\small%20\text{IDF}(t)=\log\left(\frac{N}{\text{DF}(t)}\right)) 
-     Di mana *N* adalah jumlah total dokumen, dan DF(t) adalah jumlah dokumen yang mengandung token (*t*).
+     ![Rumus IDF}](gambarRumus/idf.png)
+
+     Yang di mana *N* adalah jumlah total dokumen, dan DF(t) adalah jumlah dokumen yang mengandung token.
      
    - **TF-IDF:**  
      Rumus:
-     ![\small \text{TF-IDF}(t,d)=\text{TF}(t,d)\times \text{IDF}(t)](https://latex.codecogs.com/svg.latex?\small%20\text{TF-IDF}(t,d)=\text{TF}(t,d)\times%20\text{IDF}(t))
+     ![Rumus TF-IDF}](gambarRumus/tf-idf.png)
 
 3. **Pencarian Dokumen:**
    - **Cosine Similarity:**  
      Digunakan untuk mengukur kesamaan antara vektor TF-IDF dokumen dengan vektor query.
      Rumus:  
-     ![\small \text{CosineSimilarity}(v_1,v_2)=\frac{v_1\cdot v_2}{\|v_1\|\|v_2\|}](https://latex.codecogs.com/svg.latex?\small%20\text{CosineSimilarity}(v_1,v_2)=\frac{v_1\cdot%20v_2}{\|v_1\|\|v_2\|})
+     ![Rumus Cosine Similarity}](gambarRumus/cosineSimilarity.png)
 
      Yang di mana:
        - v₁ • v₂ adalah dot product dari vektor v₁ dan v₂.
