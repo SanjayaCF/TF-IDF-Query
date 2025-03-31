@@ -32,26 +32,26 @@ II. Langkah Pengerjaan
 
 2. **Perhitungan TF-IDF:**
    - Setiap dokumen direpresentasikan sebagai sekumpulan token beserta frekuensi kemunculannya.
-   - **TF (Term Frequency):**
-     Rumus:
+   - **TF (Term Frequency):**\
+     Rumus:\
      ![Rumus TF}](gambarRumus/tf.png)
 
      Yang di mana *t* adalah token dan *d* adalah dokumen.
      
-   - **IDF (Inverse Document Frequency):**  
-     Rumus:
+   - **IDF (Inverse Document Frequency):**\
+     Rumus:\
      ![Rumus IDF}](gambarRumus/idf.png)
 
      Yang di mana *N* adalah jumlah total dokumen, dan DF(t) adalah jumlah dokumen yang mengandung token.
      
-   - **TF-IDF:**  
-     Rumus:
+   - **TF-IDF:**\
+     Rumus:\
      ![Rumus TF-IDF}](gambarRumus/tf-idf.png)
 
 3. **Pencarian Dokumen:**
    - **Cosine Similarity:**  
-     Digunakan untuk mengukur kesamaan antara vektor TF-IDF dokumen dengan vektor query.
-     Rumus:  
+     Digunakan untuk mengukur kesamaan antara vektor TF-IDF dokumen dengan vektor query.\
+     Rumus:\ 
      ![Rumus Cosine Similarity}](gambarRumus/cosineSimilarity.png)
 
      Yang di mana:
