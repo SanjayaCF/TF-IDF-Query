@@ -51,7 +51,7 @@ II. Langkah Pengerjaan
 3. **Pencarian Dokumen:**
    - **Cosine Similarity:**  
      Digunakan untuk mengukur kesamaan antara vektor TF-IDF dokumen dengan vektor query.\
-     Rumus:\ 
+     Rumus:\
      ![Rumus Cosine Similarity}](gambarRumus/cosineSimilarity.png)
 
      Yang di mana:
