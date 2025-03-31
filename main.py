@@ -3,7 +3,7 @@ import re
 import math
 import pickle
 from collections import Counter, defaultdict
-
+import csv
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -124,6 +124,18 @@ else:
     with open(index_pickle_file, "wb") as f:
         pickle.dump(doc_tf_idf, f)
     print("Indeks tf-idf telah dihitung dan disimpan ke file pickle.")
+
+
+
+# Jika ingin menyimpan index dalam csv
+# with open("index.csv", "w", newline='', encoding='utf-8') as csvfile:
+#     writer = csv.writer(csvfile)
+#     # Menulis header
+#     writer.writerow(["Dokumen", "Term", "TF-IDF"])
+#     # Menulis setiap entri indeks
+#     for doc, tfidf in doc_tf_idf.items():
+#         for term, value in tfidf.items():
+#             writer.writerow([doc, term, value])
 
 
 
